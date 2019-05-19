@@ -108,9 +108,6 @@ MIT license, Copyright (c) 2018 Dinesh Pandiyan.
 ## <a name="architecture">&sect; 项目架构</a>
 ### <a name="tree">⊙ 目录结构</a>
 ```
-.
-├─ build/            # Webpack 配置目录
-├─ dist/             # build 生成的生产环境下的项目
 ├─ app/              # 源码目录（开发都在这里进行）
 │   ├─ components/     # 组件
 │   ├── containers/    # 路由视图
@@ -123,6 +120,8 @@ MIT license, Copyright (c) 2018 Dinesh Pandiyan.
 │   ├── index.html     # 静态基页
 │   ├── reducers.js    # 全局reducers
 ├── static/          # 放置无需经由 Webpack 处理的静态文件
+├── config           # webpack配置
+├── server           # node server配置
 ├── .babelrc         # Babel 转码配置
 ├── .editorconfig    # Vs code编辑器配置
 ├── .eslintrc        # ESLint 配置
